@@ -3,102 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simulateur de Dépenses Numériques pour Médecins</title>
+    <title>Simulateur de Dépenses pour Médecins</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <h1>Simulateur de Dépenses Numériques pour Médecins</h1>
+        <h1>Simulateur de Dépenses pour Médecins</h1>
 
-        <!-- Catégorie Abonnement -->
-        <h2>Abonnement</h2>
-        <form id="expenseForm">
-            <div class="expense-item">
-                <input type="checkbox" id="logicielMetier" data-price="151.77">
-                <label for="logicielMetier">Logiciel métier (151,77 €/mois)</label>
-            </div>
-            <div class="expense-item">
-                <input type="checkbox" id="teleconsultation" data-price="85.78">
-                <label for="teleconsultation">Téléconsultation (85,78 €/mois)</label>
-            </div>
-            <div class="expense-item">
-                <input type="checkbox" id="teleExpertise" data-price="127.50">
-                <label for="teleExpertise">Télé expertise (127,50 €/mois)</label>
-            </div>
-            <div class="expense-item">
-                <input type="checkbox" id="agenda" data-price="153.13">
-                <label for="agenda">Agenda / prise de rendez-vous en ligne (153,13 €/mois)</label>
-            </div>
-            <div class="expense-item">
-                <input type="checkbox" id="messagerie" data-price="13.10">
-                <label for="messagerie">Messagerie interprofessionnelle (13,10 €/mois)</label>
-            </div>
-            <div class="expense-item">
-                <input type="checkbox" id="lap" data-price="28.24">
-                <label for="lap">Abonnement LAP (28,24 €/mois)</label>
-            </div>
-            <div class="expense-item">
-                <input type="checkbox" id="telepaiement" data-price="34.13">
-                <label for="telepaiement">Matériel de télépaiement (34,13 €/mois)</label>
-            </div>
-            <div class="expense-item">
-                <input type="checkbox" id="lecteur" data-price="29.83">
-                <label for="lecteur">Lecteur de téléservice (Carte vitale et CPS) (29,83 €/mois)</label>
-            </div>
-            <div class="expense-item">
-                <input type="checkbox" id="ereputation" data-price="32.06">
-                <label for="ereputation">Solution de gestion de la E-réputation (32,06 €/mois)</label>
-            </div>
-            <div class="expense-item">
-                <input type="checkbox" id="maintenance" data-price="77.79">
-                <label for="maintenance">Maintenance des outils numériques (77,79 €/mois)</label>
-            </div>
-            <div class="expense-item">
-                <input type="checkbox" id="telesecretariat" data-price="397.96">
-                <label for="telesecretariat">Télé secrétariat (397,96 €/mois)</label>
-            </div>
+        <!-- Abonnement Section -->
+        <div class="category">
+            <h2>Abonnement</h2>
+            <label><input type="checkbox" id="logiciel" data-price="151.77"> Logiciel métier (151,77 €/mois)</label><br>
+            <label><input type="checkbox" id="teleconsultation" data-price="85.78"> Téléconsultation (85,78 €/mois)</label><br>
+            <label><input type="checkbox" id="teleexpertise" data-price="127.50"> Télé expertise (127,50 €/mois)</label><br>
+            <label><input type="checkbox" id="agenda" data-price="153.13"> Agenda / prise de rendez-vous en ligne (153,13 €/mois)</label><br>
+            <label><input type="checkbox" id="messagerie" data-price="13.10"> Messagerie interprofessionnelle (13,10 €/mois)</label><br>
+            <label><input type="checkbox" id="lap" data-price="28.24"> Abonnement LAP (28,24 €/mois)</label><br>
+            <label><input type="checkbox" id="telepaiement" data-price="34.13"> Matériel de télépaiement (34,13 €/mois)</label><br>
+            <label><input type="checkbox" id="lecteur" data-price="29.83"> Lecteur de téléservice (Carte vitale et CPS) (29,83 €/mois)</label><br>
+            <label><input type="checkbox" id="ereputation" data-price="32.06"> Solution de gestion de la E-réputation (32,06 €/mois)</label><br>
+            <label><input type="checkbox" id="maintenance" data-price="77.79"> Maintenance des outils numériques (77,79 €/mois)</label><br>
+            <label><input type="checkbox" id="telesecretariat" data-price="397.96"> Télé secrétariat (397,96 €/mois)</label><br>
+        </div>
 
-            <!-- Catégorie Matériel -->
+        <!-- Matériel Section -->
+        <div class="category">
             <h2>Matériel</h2>
-            <div class="expense-item">
-                <input type="checkbox" id="ordinateur" data-price="500">
-                <label for="ordinateur">Ordinateur (500 €)</label>
-            </div>
-            <div class="expense-item">
-                <input type="checkbox" id="ecran" data-price="150">
-                <label for="ecran">Écran (150 €)</label>
-            </div>
-            <div class="expense-item">
-                <input type="checkbox" id="souris" data-price="50">
-                <label for="souris">Souris (50 €)</label>
-            </div>
-            <div class="expense-item">
-                <input type="checkbox" id="clavier" data-price="50">
-                <label for="clavier">Clavier (50 €)</label>
-            </div>
-            <div class="expense-item">
-                <input type="checkbox" id="imprimante" data-price="200">
-                <label for="imprimante">Imprimante (200 €)</label>
-            </div>
-            <div class="expense-item">
-                <input type="checkbox" id="scan" data-price="200">
-                <label for="scan">Scan (200 €)</label>
-            </div>
+            <label><input type="checkbox" id="ordinateur fixe" data-price="1200"> Ordinateur fixe (1200 €)</label><br>
+            <label><input type="checkbox" id="ecran" data-price="150"> Écran (150 €)</label><br>
+            <label><input type="checkbox" id="souris" data-price="30"> Souris (30 €)</label><br>
+            <label><input type="checkbox" id="clavier" data-price="66"> Clavier (66 €)</label><br>
+            <label><input type="checkbox" id="imprimante/scan" data-price="450"> Imprimante/scan (450 €)</label><br>
+        </div>
 
-            <!-- Bouton de calcul -->
-            <div class="expense-item">
-                <button type="button" onclick="calculateExpenses()">Calculer les Dépenses</button>
-            </div>
-        </form>
-
-        <!-- Résultats -->
+        <!-- Results Section -->
         <div id="results">
             <h2>Résultats</h2>
-            <p>Dépenses mensuelles estimées : <span id="monthlyExpenses">0</span> €</p>
-            <p>Dépenses annuelles estimées : <span id="annualExpenses">0</span> €</p>
-            <p>Dépenses de matériel : <span id="materialExpenses">0</span> €</p>
+            <p>Dépenses mensuelles estimées: <span id="monthlyExpenses">0</span> €</p>
+            <p>Dépenses annuelles estimées: <span id="annualExpenses">0</span> €</p>
+            <p>Dépense de matériel: <span id="materialExpenses">0</span> €</p>
         </div>
+
+        <button onclick="calculateExpenses()">Calculer</button>
     </div>
+
+    <!-- Modal for URPS Savings -->
+<div id="urpsModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>En utilisant la plateforme de référencement URPS, vous pouvez gagner jusqu'à <span id="urpsSavingsAmount">0</span> !</p>
+        <p>Voici le détail de vos économies :</p>
+        <div id="savingsDetails"></div> <!-- This is where the detailed savings will be displayed -->
+    </div>
+</div>
     <script src="script.js"></script>
 </body>
 </html>
