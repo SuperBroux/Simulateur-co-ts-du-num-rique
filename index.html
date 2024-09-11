@@ -44,18 +44,21 @@
             <p>Dépense de matériel: <span id="materialExpenses">0</span> €</p>
         </div>
 
+        <!-- URPS Savings Section (Affiché sous les résultats) -->
+        <div id="urpsSavingsSection">
+            <h2>Réductions via URPS</h2>
+            <p>En utilisant la plateforme de référencement URPS, vous pouvez gagner jusqu'à <span id="urpsSavingsAmount">0</span>.</p>
+            <div id="savingsDetails"></div>
+        </div>
+
+        <!-- Button "Comment ça marche?" -->
+        <div class="info-section">
+            <button onclick="window.location.href='https://www.urps-med-idf.org/la-centrale-de-referencement/'">Comment ça marche ?</button>
+        </div>
+
         <button onclick="calculateExpenses()">Calculer</button>
     </div>
 
-    <!-- Modal for URPS Savings -->
-<div id="urpsModal" class="modal">
-    <div class="modal-content">
-        <span class="close">&times;</span>
-        <p>En utilisant la plateforme de référencement URPS, vous pouvez gagner jusqu'à <span id="urpsSavingsAmount">0</span> !</p>
-        <p>Voici le détail de vos économies :</p>
-        <div id="savingsDetails"></div> <!-- This is where the detailed savings will be displayed -->
-    </div>
-</div>
     <script src="script.js"></script>
 </body>
 </html>
