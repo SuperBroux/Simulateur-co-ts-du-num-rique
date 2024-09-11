@@ -1,41 +1,72 @@
+/* General styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
-    color: #333;
     margin: 0;
-    padding: 20px;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
 }
 
 .container {
     max-width: 800px;
-    margin: auto;
-    background: white;
+    margin: 50px auto;
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
     text-align: center;
+    color: #333;
+}
+
+.category {
+    margin-bottom: 30px;
+}
+
+/* Results Section */
+#results {
+    background-color: #e6f7ff;
+    padding: 15px;
+    border-radius: 5px;
     margin-bottom: 20px;
 }
 
-.expense-item {
-    display: flex;
-    align-items: center;
-    margin-bottom: 15px;
+/* URPS Savings Section */
+#urpsSavingsSection {
+    background-color: #f4f4f9;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 20px;
 }
 
-.expense-item label {
-    flex: 1;
-    margin-left: 10px;
-}
-
+/* Button */
 button {
     display: block;
-    width: 100%;
-    padding: 10px;
-    background-color: #4CAF50;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* "Comment ça marche?" Button */
+.info-section {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.info-section button {
+    padding: 10px 20px;
+    background-color: #007bff;
     color: white;
     border: none;
     border-radius: 5px;
@@ -43,17 +74,6 @@ button {
     cursor: pointer;
 }
 
-button:hover {
-    background-color: #45a049;
-}
-
-#results {
-    margin-top: 20px;
-    padding: 10px;
-    background-color: #f1f1f1;
-    border-radius: 8px;
-}
-
-#results h2 {
-    margin-top: 0;
+.info-section button:hover {
+    background-color: #0056b3;
 }
