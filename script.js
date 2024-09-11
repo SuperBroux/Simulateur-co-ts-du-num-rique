@@ -7,7 +7,7 @@ function calculateUrpsSavings() {
     // Check for selected items and calculate savings with details for "Abonnement"
     if (document.getElementById('agenda').checked) {
         const marketPrice = parseFloat(document.getElementById('agenda').getAttribute('data-price'));
-        const urpsPrice = 62; // Offre URPS à 62€/mois
+        const urpsPrice = 89; // Offre URPS à 89€/mois
         const saving = marketPrice - urpsPrice;
         urpsSavingsMonthly += saving;
         savingsDetails += `Agenda / Prise de RDV en ligne : Économie de ${saving.toFixed(2)} €/mois<br>`;
