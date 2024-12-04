@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header.hero {
+    text-align: center;
+    padding: 50px;
+    background: #0078d7;
+    color: #fff;
+}
+
+button {
+    background: #0078d7;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #005bb5;
+}
+
+.hidden {
+    display: none;
+}
+
+main {
+    padding: 20px;
+}
+
+.question {
+    margin-bottom: 20px;
+}
+
+.checkbox-group label {
+    display: block;
+    margin: 5px 0;
+}
+
+/* Uniformiser les colonnes entre les deux tableaux */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #fff;
+    table-layout: fixed; /* Permet de fixer la largeur des colonnes */
+}
+
+table th, table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+table th {
+    width: 33.33%; /* Applique une largeur uniforme pour chaque colonne */
+}
+
+table tbody tr:not(:last-child) {
+    border-bottom: 2px solid #ddd;
+}
+
+h3 {
+    margin-top: 40px;
+}

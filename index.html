@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulateur de besoins numériques pour médecins</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Section de la page d'accueil -->
+    <header class="hero">
+        <h1>Évaluez vos besoins numériques et matériels</h1>
+        <p>Un outil simple et rapide pour optimiser vos choix numériques et matériels, avec des scénarios adaptés à vos besoins.</p>
+        <button id="start-button">Commencer le questionnaire</button>
+    </header>
+
+    <!-- Section du questionnaire -->
+    <main id="questionnaire" class="hidden">
+        <!-- Question 1 -->
+        <section class="question">
+            <h2>Combien de médecins exercent ou vont exercer dans le cabinet ?</h2>
+            <select id="doctor-count">
+                <option value="" disabled selected>Choisissez</option>
+                <script>
+                    for (let i = 1; i <= 10; i++) {
+                        document.write(`<option value="${i}">${i}</option>`);
+                    }
+                </script>
+            </select>
+        </section>
+
+        <!-- Question 2 -->
+        <section class="question">
+            <h2>À quels services pensez-vous souscrire ?</h2>
+            <div class="checkbox-group" id="subscription-options">
+                <label><input type="checkbox" value="Logiciel métier"> Logiciel métier (très conseillé)</label>
+                <label><input type="checkbox" value="Logiciel d'aide à la prescription"> Logiciel d'aide à la prescription (très conseillé)</label>
+                <label><input type="checkbox" value="Agenda en ligne et téléconsultation"> Agenda en ligne et téléconsultation (conseillé)</label>
+                <label><input type="checkbox" value="Téléconsultation seulement"> Téléconsultation seulement</label>
+                <label><input type="checkbox" value="Agenda en ligne seulement"> Agenda en ligne seulement</label>
+                <label><input type="checkbox" value="Télé expertise"> Télé expertise</label>
+                <label><input type="checkbox" value="Télé secrétariat"> Télé secrétariat</label>
+                <label><input type="checkbox" value="Télé secrétariat virtuel"> Télé secrétariat virtuel</label>
+                <label><input type="checkbox" value="Maintenance informatique"> Maintenance informatique</label>
+                <label><input type="checkbox" value="Solution de gestion de la e-réputation"> Solution de gestion de la e-réputation</label>
+            </div>
+        </section>
+
+        <!-- Question 3 -->
+        <section class="question">
+            <h2>Matériel souhaité</h2>
+            <div class="checkbox-group" id="equipment-options">
+                <label><input type="checkbox" value="Ordinateur fixe"> Ordinateur fixe</label>
+                <label><input type="checkbox" value="Ordinateur portable"> Ordinateur portable</label>
+                <label><input type="checkbox" value="Écran 24 pouces"> Écran 24 pouces</label>
+                <label><input type="checkbox" value="Écran 27 pouces"> Écran 27 pouces</label>
+                <label><input type="checkbox" value="Souris"> Souris</label>
+                <label><input type="checkbox" value="Clavier"> Clavier</label>
+                <label><input type="checkbox" value="ECG"> ECG</label>
+                <label><input type="checkbox" value="Échographe"> Échographe</label>
+                <label><input type="checkbox" value="Imprimante"> Imprimante</label>
+            </div>
+        </section>
+
+        <!-- Bouton valider -->
+        <button id="submit-button">Valider</button>
+    </main>
+
+    <!-- Section des résultats -->
+    <section id="results" class="hidden">
+        <h2>Vos besoins</h2>
+
+        <h3>Abonnements</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Service</th>
+                    <th>Besoins couverts par la centrale</th>
+                    <th>Hors centrale</th>
+                </tr>
+            </thead>
+            <tbody id="subscription-results">
+                <!-- Les résultats des abonnements seront insérés ici -->
+            </tbody>
+        </table>
+
+        <h3>Matériel</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Matériel</th>
+                    <th>Besoins couverts par la centrale</th>
+                    <th>Hors centrale</th>
+                </tr>
+            </thead>
+            <tbody id="equipment-results">
+                <!-- Les résultats du matériel seront insérés ici -->
+            </tbody>
+        </table>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
